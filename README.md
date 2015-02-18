@@ -42,7 +42,7 @@
 		4. Partials
 		1. [Action Mailer](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/action_mailer.md)
 		3. Deploying to heroku
-		4. HTTParty
+		4. [HTTParty](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/httparty_cheat_sheet_markdown.md)
 		4. TDD & RSPEC in Rails
 		5. Rails + Angular SPA [(demo app)](github link please)
 		6. [Paperclip](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/paperclip.md)
