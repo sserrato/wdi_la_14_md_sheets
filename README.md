@@ -50,7 +50,7 @@
 		6. Paperclip
 		7. Asset Pipeline
 		8. Custom Params
-		9. How To Create A Blog In Rails [(demo app)](github link please)
+		9. [How To Create A Blog In Rails] [(demo app)](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/make_a_blog_in_rails.md)
 		10. Active Record
 		11. Oauth [(lorin's demo app)](https://github.com/lorint/OAuthSamples2) 
 5. SQL
