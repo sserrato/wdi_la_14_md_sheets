@@ -26,7 +26,7 @@
 				* Rails Terminal Commands
 				* Database setup 
 					* Migrations
-			* From SQLite to PostgreSQL
+			* [From SQLite to PostgreSQL](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/General/From%20SQLite%20to%20PostgreSQL.md)
 			* Controller Actions, Directory Structure, Root Route
 			* CRUD, Verbs & RESTful Actions
 			* MVC (Model-View-Controller)
