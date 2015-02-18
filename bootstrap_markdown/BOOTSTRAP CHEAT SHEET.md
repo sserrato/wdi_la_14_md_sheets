@@ -25,6 +25,7 @@ Add Bootstrap gem to gemfile: gem 'bootstrap-sass', '~> 3.2.0'
 ```bash
 $ bundle
 ```
+
 In app > assets > stylesheets > application.css, add @import 'bootstrap';
 Rename application.css to application.css.scss
 Add Bootstrap Jquery script & Glyphicon library to app > views > layouts > application.html.erb
