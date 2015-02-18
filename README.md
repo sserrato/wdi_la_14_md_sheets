@@ -11,7 +11,7 @@
 	2. SASS
 3. Javascript
 	1. Angular
-		* Basic Directives
+		* [Basic Directives](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/javascript/angular/basic-angular-directives.md)
 		* Forms
 		* Services
 		* Custom Directives
@@ -26,7 +26,7 @@
 				* Rails Terminal Commands
 				* Database setup 
 					* Migrations
-			* From SQLite to PostgreSQL
+			* [From SQLite to PostgreSQL](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/General/From%20SQLite%20to%20PostgreSQL.md)
 			* Controller Actions, Directory Structure, Root Route
 			* CRUD, Verbs & RESTful Actions
 			* MVC (Model-View-Controller)
@@ -34,7 +34,7 @@
 				* Controllers
 				* Views
 			* Routes		
-			* Useful code snippets
+			* [Useful code snippets](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/useful_code_snippets.md)
 		1. Authentication
 		4. Partials
 		1. Action Mailer
