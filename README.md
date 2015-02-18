@@ -1,5 +1,8 @@
 #WDI_LA_14
 
+![alt text](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/images/wdi14_1.jpg "class of wdi 14")
+
+
 > Code > Fail > Learn > Cheat (Sheet) > Repeat 
 
 ###Cheat Sheet Index
