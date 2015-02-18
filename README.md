@@ -12,7 +12,12 @@
 3. Javascript
 	1. Angular
 		* [Basic Directives](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/javascript/angular/basic-angular-directives.md)
+
 		* Forms
+=======
+		* [Forms](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/javascript/angular/angular-forms.md)
+
+
 		* Services
 		* Custom Directives
 		* Angularfire
@@ -22,7 +27,7 @@
 	1. RSPEC
 	1. Rails
 		1. General
-			* Workflow To Start A New Rails App
+			* [Workflow To Start A New Rails App](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/General/workflow_to_start_a_new_rails_app.md)
 				* Rails Terminal Commands
 				* Database setup 
 					* Migrations
@@ -45,7 +50,7 @@
 		6. Paperclip
 		7. Asset Pipeline
 		8. Custom Params
-		9. How To Create A Blog In Rails [(demo app)](github link please)
+		9. [How To Create A Blog In Rails] [(demo app)](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/make_a_blog_in_rails.md)
 		10. Active Record
 		11. Oauth [(lorin's demo app)](https://github.com/lorint/OAuthSamples2) 
 5. SQL
