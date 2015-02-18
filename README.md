@@ -11,7 +11,7 @@
 	2. SASS
 3. Javascript
 	1. Angular
-		* Basic Directives
+		* [Basic Directives](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/javascript/angular/basic-angular-directives.md)
 		* Forms
 		* Services
 		* Custom Directives
