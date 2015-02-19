@@ -5,6 +5,7 @@
 
 > Code > Fail > Learn > Cheat (Sheet) > Repeat 
 
+[Instructions](#Instructions)
 ###Cheat Sheet Index
 
 
@@ -53,17 +54,27 @@
 		10. [Active Record](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/active_record.md)
 		11. [Oauth](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/oauth.md) [(lorin's demo app)](https://github.com/lorint/OAuthSamples2) 
 5. SQL
-5. GIT
+5. Git
+	1. [Git Basics](https://github.com/ga-students/WDI_LA_14/blob/master/01-week/git_basics/git_basics_lesson.md)
+	2. [Git Workflow](https://gist.github.com/grant-roy/7fd86507282a4a789f3e)
 6. Data Modelling
 7. API's
 	1. [Google maps](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/API/google_maps_api.md)
 	2. [Rotten Tomatoes](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/API/rotten_tomatoes_api.md)
-	3.
-	4.
-	5. 
-	6.
-	7.
-	
+
+
+###Instructions
+
+1. In your chosen directory ```$ mkdir cheat_sheets```
+2. ```git clone https://github.com/blaisethomas/wdi_la_14_md_sheets.git```
+3. ```git init``` (first time only)
+3. Add your markdown (.md) in the appropriate sub-directory. We are attempting to recreate the structure of the index (eg javascript/angular/built_in_directives).
+4. add the url of your file to this [README.md](https://github.com/blaisethomas/wdi_la_14_md_sheets) using ```[title](link)``` notation.
+5. ``` git add -A``` 
+6. ```git commit -m "added markdown.md and indexed it in readme.md"```
+7. ```git remote add origin <ssh>``` (first time only)
+7. ```git pull``` to make sure you have an updated master branch
+8. ```git push origin master```
 	
 
 		
