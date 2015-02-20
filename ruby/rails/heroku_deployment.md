@@ -31,6 +31,7 @@
 5. $ git push -u origin master to finish it all off
 
 ##Create your Heroku app
+if you haven't created your app already...
 
 2. $ heroku create yourAppName 
 3. $ heroku git:remote -a yourAppName
@@ -52,7 +53,6 @@ Add the following to your Gemfile:
 ##Prep your app for precompile
 #####Open config/environments/production.rb
 
-2. config.assets.compress = true (compress js and css)
 3. config.assets.compile = true (fallback to assets pipeline if a precompiled asset is missed)
 4. config.assets.digest = true (generate digests for assets URLs)
 
@@ -61,14 +61,14 @@ Add the following to your Gemfile:
 ####In your terminal, run
  
 1. $ RAILS_ENV=production bundle exec rake assets:precompile
-### Add - Commit - Push
-
 1. git add -A
 2. git commit -m "precompiled assets locally"
-3. git push origin master
-4. git push heroku master
-### Rake your seed file (if you have one)
+3. git push heroku master
+
+### Migrate and Rake your seed file (if you have one)
 In your terminal, run 
+
+5. $ heroku run rake db:migrate
 6. $ heroku run rake db:seed (note: this must be done after you've pushed to Heroku, otherwise the seed file won't be recognized)
 
 ###After you rake your seed file - Add - Commit - Push
