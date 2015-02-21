@@ -23,7 +23,7 @@ $rails g model order item quantity:integer address user:belongs_to
 rails g model order item quantity:integer address user:references (equivalent to line above)
 ```
 #### To dynamically add numbers to a loop (and/or find out current index)
-<p>  This will interate through all the posts in @post1 and display the index number for each post.
+<p>  This will interate through all the posts in @post1 and display the index number for each post. We added +1 to index because so our first displayed number will start at 1 and not 0, assuming we're pulling the latest posts.
 ```ruby
 <% @post1.each_with_index do |post, index|%>
 	<%= (index+1) %>
