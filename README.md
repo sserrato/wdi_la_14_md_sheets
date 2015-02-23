@@ -39,7 +39,7 @@
 				* Views
 			* [Routes](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/routes.md)		
 			* [Useful code snippets](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/useful_code_snippets.md)
-		1. Authentication
+		1. [Authentication](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/authentication.md)
 		4. Partials
 		1. [Action Mailer](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/action_mailer.md)
 		3. Deploying to heroku

@@ -96,10 +96,10 @@ Add a  new file new.html.erb to apps/views/users/. Include the signup form.
 ``` 
 <h1>Signup for our super awesome app</h1>
 <%= form_for :user, url: '/users' do |f| %>
-<%= f.text_field :name %>
-<%= f.text_field :email %>
-<%= f.password_field :password %>
-<%= f.password_field :password_confirmation %>
+	Name: <%= f.text_field :name %>
+	Email: <%= f.text_field :email %>
+	Password: <%= f.password_field :password %>
+	Password Confirmation: <%= f.password_field :password_confirmation %>
 <% end %>
 ```
 
