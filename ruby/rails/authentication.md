@@ -278,3 +278,7 @@ class PostsController < ApplicationController
 end
 ```
 
+## Other Resources
+* [Simple Authentication with Bcrypt](https://gist.github.com/thebucknerlife/10090014)
+* [Railscast: Authentication from scratch](http://railscasts.com/episodes/250-authentication-from-scratch)
+* [Method: has_secure_password](http://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html)
