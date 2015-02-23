@@ -186,3 +186,95 @@ get '/logout' => 'sessions#destroy'
 ```
 
 
+### 12. Add create and destroy methods
+
+Add the create and destroy methods to the sessions controller.
+
+``` 
+ def create
+    user = User.find_by_email(params[:email])
+    if user && user.authenticate(params[:password])
+      session[:user_id] = user.id
+      redirect_to '/'
+    else
+      redirect_to '/login'
+    end
+  end
+
+  def destroy
+    session[:user_id] = nil
+    redirect_to '/login'
+  end
+```
+
+### 13. Update application controller
+
+Now you need to update the application controller to look up the user, find out if their logged in, and save the user object to a variable called @current_user.
+
+``` 
+class ApplicationController < ActionController::Base
+  protect_from_forgery with: :exception
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+  helper_method :current_user
+
+  def authorize
+    redirect_to '/login' unless current_user
+  end
+
+end
+```
+
+### 14. Update the application view 
+
+Adjust the application layout file to display the user's name if their logged in and include signup, log in and logout links. 
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GifVault</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% if current_user %>
+  Signed in as <%= current_user.name %> | <%= link_to "Logout", '/logout' %>
+<% else %>
+  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
+```
+
+### 15. Extra: Before_Filter
+
+If you want to secure any controller, to require a user to login before they can see this controller's actions, use the before_filter. Here is an example below.
+
+```
+class PostsController < ApplicationController
+
+  before_filter :authorize
+
+  def new
+  end
+
+  def create
+  end
+  
+  def show
+  end
+
+  def index
+  end
+
+end
+```
+
