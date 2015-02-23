@@ -90,7 +90,7 @@ end
 
 ### 8. Create a view file for signup form
 
-Add a  new file new.html.erb to apps/views/users/. Include the signup form.
+Add a  new file new.html.erb to apps/views/users/. Include the signup form. Any time a new user is created, it will pass through this view.
 
 
 ``` 
@@ -103,5 +103,86 @@ Add a  new file new.html.erb to apps/views/users/. Include the signup form.
 <% end %>
 ```
 
+### 9. Add logic to create method on users controller
+
+To ensure the new user creation action occurs, add the following the create method in the users controller.
+
+``` 
+class UsersController < ApplicationController
+
+  def new
+  end
+
+  def create
+    user = User.new(user_params)
+    if user.save
+      session[:user_id] = user.id
+      redirect_to '/'
+    else
+      redirect_to '/signup'
+    end
+  end
+
+private
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :password_confirmation)
+  end
+end
+```
+Awesome, you now have a working signup view and method! Now let's move on to log in.
+
+### 10. Create a sessions controller
+
+Your sessions controller is going to be where you create the login and logout methods. 
+
+``` 
+$ rails g controller sessions
+```
+
+Every time a session is created, it means a user is logged in. Every time a session is destroyed, a user is logged out.
+
+Add the following methods to your sessions controller.
+
+``` 
+class SessionsController < ApplicationController
+
+  def new
+  end
+
+  def create
+  end
+
+  def destroy
+  end
+
+end
+```
+
+### 10. Create a view form for the login
+
+Add a  new file new.html.erb to apps/views/sessions/. Include the login form. 
+
+``` 
+<h1>Login</h1>
+
+<%= form_tag '/login' do %>
+
+  Email: <%= text_field_tag :email %>
+  Password: <%= password_field_tag :password %>
+  <%= submit_tag "Submit" %>
+
+<% end %>
+```
+
+### 11. Adjust routes for login
+
+Add the following code to your routes.rb file to include the required routes for logging in.
+
+``` 
+get '/login' => 'sessions#new'
+post '/login' => 'sessions#create'
+get '/logout' => 'sessions#destroy'
+```
 
 
