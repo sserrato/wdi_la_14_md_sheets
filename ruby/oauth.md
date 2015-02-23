@@ -124,7 +124,6 @@ For further reading on OAuth, refer to these resources:
 - [OAuth.net Getting Started Guide](http://oauth.net/documentation/getting-started/)
 - [OAuth 2.0 & The Road To Hell](http://hueniverse.com/2012/07/26/oauth-2-0-and-the-road-to-hell/)
 - [OAuth 2.0: Benefits & Use Cases - Why?](http://stackoverflow.com/questions/7561631/oauth-2-0-benefits-and-use-cases-why)
-- sdf
 - [OAuth: Pros & Cons of OAuth](http://www.socialtechnologyreview.com/articles/oauth-pros-and-cons-oauth)
 
 
