@@ -27,7 +27,7 @@
 	1. Rails
 		1. General
 			* [Workflow To Start A New Rails App](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/General/workflow_to_start_a_new_rails_app.md)
-				* Rails Terminal Commands
+				* [Rails Terminal Commands](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/railscommand.md)
 				* [Database setup](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/database_setup.md) 
 					* Migrations
 			* [From SQLite to PostgreSQL](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/General/From%20SQLite%20to%20PostgreSQL.md)
@@ -40,7 +40,7 @@
 			* [Routes](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/routes.md)		
 			* [Useful code snippets](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/useful_code_snippets.md)
 		1. [Authentication](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/authentication.md)
-		4. [Partials](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/partials.md)
+		4. Partials
 		1. [Action Mailer](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/action_mailer.md)
 		3. [Deploying to Heroku](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/heroku_deployment.md)
 		4. [HTTParty](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/httparty_cheat_sheet_markdown.md)
