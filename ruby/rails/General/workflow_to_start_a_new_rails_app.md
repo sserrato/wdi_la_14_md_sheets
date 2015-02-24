@@ -43,6 +43,8 @@
   
   3. Next, Terminal - **rake routes** (returns all open routes)
   4. Finally, populate your local database with the data you have built by -- Terminal - **rake db:migrate**
+  
+  :)
 
 
 
