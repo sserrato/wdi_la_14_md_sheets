@@ -40,7 +40,7 @@
 			* [Routes](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/routes.md)		
 			* [Useful code snippets](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/useful_code_snippets.md)
 		1. [Authentication](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/authentication.md)
-		4. Partials
+		4. [Partials](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/partials.md)
 		1. [Action Mailer](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/action_mailer.md)
 		3. [Deploying to Heroku](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/heroku_deployment.md)
 		4. [HTTParty](https://github.com/blaisethomas/wdi_la_14_md_sheets/blob/master/ruby/rails/httparty_cheat_sheet_markdown.md)
