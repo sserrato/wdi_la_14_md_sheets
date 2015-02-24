@@ -1,5 +1,9 @@
 # Rails Commands
+
+
 Rails Terminal Commands 
+
+
 $ rails new filename → creates a new rails app file structure in your current directory.
 $ rails g → rails generate- that can be used to generate new  models and controllers, all models built this way are singular. 
 $ rails s  →  must be run while in your app folder, initializes a local server for your rails app. Ctrl C to kill local server. 
