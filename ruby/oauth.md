@@ -58,6 +58,48 @@ You are able to manage third-party access directly from the resource provider. F
 
 ## <a name="work"></a>How does OAuth actually work?
 
+Good question. In a nutshell, OAuth allows you to give permission for one application to interact with another, without giving away your password.
+
+Below, in non-technical terms, is an variation of the OAuth love triangle, as deemed by [Rob Sobers](http://blog.varonis.com/introduction-to-oauth/).
+
+#### Step 1: Showing intent
+Here, the user says: "Hi Buffer App, I want you to post my scheduled social media posts to my Facebook page on my behalf."
+
+Then, the third-party app says "Coo. Let me go ask Facebook for permission."
+
+#### Step 2: Receiving permission
+Next, the third-party app asks the resource provider (in this case, Facebook): "One of your users would like me to post to his page. Can I get a request token from you?"
+
+The resource provider, Facebook replies: "Of course. Here's a token and secret. Guard them with your life so no request forgery occurs."
+
+#### Step 3: User redirected to resource provider
+Next, the third party app, Buffer, sends the user over to the resource provider, Facebook, for approval. The user must take the request token with them.
+
+#### Step 4: User gives permission
+The user then arrives to Facebook, telling it: "I want to authorize this request token from Buffer App".
+
+Facebook confirms: "Ok, are you sure you want Bufer to be able to post on your page on your behalf?"
+
+The user, confirms, hopefully.
+
+#### Step 5: 3rd-party gets access token
+At this point, the user is redirected back to the third party app, in this case, Buffer.
+
+Buffer then asks the resource provider, Facebook, to exchange their request token for an access token.
+
+Facebook then provides Buffer with an access token and secret.
+
+#### Step 6: 3rd-party access protected resource
+Finally! Buffer now has succifient tokens to access Facebook's posting permissions on the user's behalf.
+
+Phew, that was long.
+
+#### In summary...
+The user never had to share Facebook login credentials with Buffer. Rather, he just delegated access using OAuth.
+
+Should the user wish to revoke access, he/she can do so by logging into Facebook and revoking the tokens for Buffer.
+
+
 ### <a name="providers"></a>Resource providers that use OAuth
 
 Here are some of the most popular resource providers that use OAuth, as well as links to related documentation:
@@ -104,11 +146,55 @@ Prior, signatures had to be generated and validated on the server for every API 
 
 Here, we are going to walk through the process of setting up OAuth with some common resource providers.
 
+Consider using [Lorin's demo app](https://github.com/lorint/OAuthSamples2) to assist you with this.
+
 ### <a name="github"></a>GitHub
+1. Go to GitHub profile.
+2. Register new application: [https://github.com/settings/applications
+](https://github.com/settings/applications)
+3. Make sure the authorization callback URL is: http://localhost:3000/github
+4. Set the client ID and client secret by running the following command line:
+
+```
+$ atom ~/.bash_profile
+export GH_CLIENT_ID=[youridhere]
+export GH_CLIENT_SECRET=[yoursecrethere]
+```
+
+5. Close out all instances of Terminal (or your command line interface).
+6. Check in Terminal that everything was saved by typing in the following:
+
+```
+$ echo $GH_CLIENT_ID
+$ echo $GH_CLIENT_SECRET
+```
 
 ### <a name="twitter"></a>Twitter
 
+
+
 ### <a name="instagram"></a>Instagram
+
+1. Go to Instagram developer docs: [http://instagram.com/developer/](http://instagram.com/developer/)
+2. Register your account.
+3. Register client.
+4. Ensure that the OAuth-redirect-url is something like: http://localhost:3000/instagram
+3. Review the Instagram docs for authentication: [http://instagram.com/developer/authentication/](http://instagram.com/developer/authentication/)
+4. Set the client ID and client secret, the same way you did prior.
+
+```
+$ atom ~/.bash_profile
+export IG_CLIENT_ID=[youridhere]
+export IG_CLIENT_SECRET=[yoursecrethere]
+```
+
+5. Close out all instances of Terminal (or your command line interface).
+6. Check in Terminal that everything was saved by typing in the following:
+
+```
+$ echo $IG_CLIENT_ID
+$ echo $IG_CLIENT_SECRET
+```
 
 ### <a name="facebook"></a>Facebook
 
