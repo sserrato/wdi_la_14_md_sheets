@@ -67,7 +67,6 @@
 
 1. In your chosen directory ```$ mkdir cheat_sheets```
 2. ```git clone https://github.com/blaisethomas/wdi_la_14_md_sheets.git```
-3. ```git init``` (first time only)
 3. Add your markdown (.md) in the appropriate sub-directory. We are attempting to recreate the structure of the index (eg javascript/angular/built_in_directives).
 4. add the url of your file to this [README.md](https://github.com/blaisethomas/wdi_la_14_md_sheets) using ```[title](link)``` notation.
 5. ``` git add -A``` 
