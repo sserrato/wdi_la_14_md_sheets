@@ -10,7 +10,7 @@ This is an introduction to **Sass** - CSS with Superpowers!
 
 
 ###Workflow
-You will probably have already done these steps when you start:
+You probably have already done these steps but if not, follow these when you start:
 
 * $ bundle → ensure all gems are installed
 * $ rake db:migrate → 
