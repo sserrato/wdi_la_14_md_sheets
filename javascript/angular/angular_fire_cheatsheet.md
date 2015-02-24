@@ -20,3 +20,6 @@
 6. Add div linking the controller in the HTML by using angular directive (ng-controller)
 7. Create model in JS file with scope and add data
 8. Angular expressions in the view use double curlies {{ }}
+
+
+Updated by Sam on 2/23/15
